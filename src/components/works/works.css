@@ -1,0 +1,11 @@
+.react-photo-gallery--gallery > div > img {
+  transition: 0.3s;
+}
+
+.react-photo-gallery--gallery > div > img:hover {
+  transition: 0.1s;
+  opacity: 0.5;
+  filter: blur(1px);
+  box-sizing: border-box;
+  border: transparent 5px solid;
+}

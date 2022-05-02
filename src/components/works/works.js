@@ -1,3 +1,4 @@
+import "./works.css";
 import React from "react";
 import Gallery from "react-photo-gallery";
 
