@@ -1,0 +1,10 @@
+#light-scheme a {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 80%;
+  color: red;
+}
+
+.light #light-scheme a {
+  color: blue;
+}

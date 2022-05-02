@@ -1,0 +1,11 @@
+#footnote {
+  font-size: 10px;
+  width: 100px;
+  font-family: "Helvetica";
+}
+
+#footnote > span > a {
+  font-size: 10px;
+  width: 100px;
+  margin-left: 3px;
+}

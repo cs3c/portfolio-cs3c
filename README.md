@@ -1,2 +1,1 @@
-# portfolio-avcomps
-Created with CodeSandbox
+https://codesandbox.io/s/github/avcomps/AVcomps

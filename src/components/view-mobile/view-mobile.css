@@ -1,0 +1,18 @@
+@media only screen and (max-width: 600px) {
+  #content-top {
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+
+  .content-top-info {
+    height: 100%;
+    padding-top: 7%;
+    padding-left: 7%;
+    text-align: start;
+    /* background: linear-gradient(-75deg, transparent 30%, black, transparent); */
+  }
+
+  .light .content-right-info {
+    /* background: linear-gradient(-75deg, transparent 30%, white, transparent); */
+  }
+}
