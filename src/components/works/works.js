@@ -1,6 +1,7 @@
 import "./works.css";
 import React, { Fragment } from "react";
 import Gallery from "react-photo-gallery";
+import { Skeleton } from "../skeleton-loader/skeleton-loader";
 
 export class Works extends React.Component {
   props = { direction: "column", numColumns: 2 };
@@ -51,7 +52,14 @@ export class Works extends React.Component {
     </Fragment>
   );
 
-  loaders = (<div style={{ display: "flex", flexWrap: "wrap" }}></div>);
+  loaders = (
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <Skeleton width="50vh" height="40vh" />
+      <Skeleton width="45vh" height="40vh" />
+      <Skeleton width="50vh" height="40vh" />
+      <Skeleton width="45vh" height="30vh" />
+    </div>
+  );
 
   componentDidMount() {
     setInterval(() => {
