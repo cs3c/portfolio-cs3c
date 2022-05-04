@@ -1,7 +1,7 @@
 import "./works.css";
-import React from "react";
+import React, { Fragment } from "react";
 import Gallery from "react-photo-gallery";
-import Skeleton from "react-loading-skeleton";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 export class Works extends React.Component {
@@ -42,27 +42,32 @@ export class Works extends React.Component {
       height: 3
     }
   ];
-  worksEmpty = [];
 
   worksGallery = (
-    <Gallery
-      photos={this.worksEmpty}
-      direction={this.props.direction}
-      columns={this.props.numColumns}
-    />
+    <Fragment>
+      <Gallery
+        photos={this.works}
+        direction={this.props.direction}
+        columns={this.props.numColumns}
+      />
+    </Fragment>
   );
 
   loaders = (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
-      {/* <Skeleton style={{ margin: "5px", width: "50%", height: "150px" }} />
-      <Skeleton width={150} height={150} style={{ margin: "5px" }} />
-      <Skeleton width={150} height={150} style={{ margin: "5px" }} />
-      <Skeleton width={150} height={150} style={{ margin: "5px" }} /> */}
+      <SkeletonTheme baseColor="gray">
+        <Skeleton style={{ margin: ".5vh", width: "50vh", height: "40vh" }} />
+        <Skeleton style={{ margin: ".5vh", width: "45vh", height: "40vh" }} />
+        <Skeleton style={{ margin: ".5vh", width: "50vh", height: "40vh" }} />
+        <Skeleton style={{ margin: ".5vh", width: "45vh", height: "30vh" }} />
+      </SkeletonTheme>
     </div>
   );
 
   componentDidMount() {
-    // this.setState({ isLoading: false }, null);
+    setInterval(() => {
+      this.setState({ isLoading: false });
+    }, 1500);
   }
 
   render() {
