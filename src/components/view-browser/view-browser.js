@@ -5,7 +5,7 @@ import { Header } from "../header/header";
 import { Menu } from "../menu/menu";
 import { Footer } from "../footer/footer";
 import { Works } from "../works/works";
-import { Player } from "../works-player/works-player";
+// import { Player } from "../works-player/works-player";
 import "../cursors/c-cursor";
 
 export default class ViewBrowser extends React.Component {
