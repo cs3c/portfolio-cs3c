@@ -19,10 +19,13 @@ export class Skeleton extends React.Component {
   }
 
   skeletonLoader(width, height, circle) {
+    var borderRadius = 0;
+    if (circle) borderRadius = width;
+
     return (
       <Fragment>
         <div
-          style={{ width: width, height: height }}
+          style={{ width: width, height: height, borderRadius: borderRadius }}
           className="skeleton-loader"
         ></div>
       </Fragment>
