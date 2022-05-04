@@ -9,7 +9,6 @@
     "react": "16.8.6",
     "react-device-detect": "2.2.2",
     "react-dom": "16.8.6",
-    "react-loading-skeleton": "3.1.0",
     "react-photo-gallery": "8.0.0"
   },
   "devDependencies": {

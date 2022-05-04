@@ -1,8 +1,6 @@
 import "./works.css";
 import React, { Fragment } from "react";
 import Gallery from "react-photo-gallery";
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 
 export class Works extends React.Component {
   props = { direction: "column", numColumns: 2 };
@@ -53,16 +51,7 @@ export class Works extends React.Component {
     </Fragment>
   );
 
-  loaders = (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
-      <SkeletonTheme baseColor="gray">
-        <Skeleton style={{ margin: ".5vh", width: "50vh", height: "40vh" }} />
-        <Skeleton style={{ margin: ".5vh", width: "45vh", height: "40vh" }} />
-        <Skeleton style={{ margin: ".5vh", width: "50vh", height: "40vh" }} />
-        <Skeleton style={{ margin: ".5vh", width: "45vh", height: "30vh" }} />
-      </SkeletonTheme>
-    </div>
-  );
+  loaders = (<div style={{ display: "flex", flexWrap: "wrap" }}></div>);
 
   componentDidMount() {
     setInterval(() => {

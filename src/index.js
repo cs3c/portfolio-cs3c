@@ -5,14 +5,13 @@ import ViewBrowser from "./components/view-browser/view-browser";
 import ViewMobile from "./components/view-mobile/view-mobile";
 
 function renderApp() {
-  console.log("---------- index.js ----- correct");
   let root = document.getElementById("app");
 
-  // if (isBrowser) {
-  //   render(<ViewBrowser />, root);
-  // } else if (isMobile) {
-  //   render(<ViewMobile />, root);
-  // }
+  if (isBrowser) {
+    render(<ViewBrowser />, root);
+  } else if (isMobile) {
+    render(<ViewMobile />, root);
+  }
 }
 
 export const App = renderApp();

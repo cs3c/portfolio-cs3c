@@ -13,7 +13,6 @@ export default class ViewBrowser extends React.Component {
   state = null;
 
   render() {
-    console.log("---------- view-browser.js ----- correct");
     return this.browser();
   }
 
