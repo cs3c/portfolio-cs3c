@@ -1,5 +1,5 @@
 import "./works.css";
-import React, { Fragment } from "react";
+import React from "react";
 import Gallery from "react-photo-gallery";
 import { Skeleton } from "../skeleton-loader/skeleton-loader";
 
@@ -43,13 +43,11 @@ export class Works extends React.Component {
   ];
 
   worksGallery = (
-    <Fragment>
-      <Gallery
-        photos={this.works}
-        direction={this.props.direction}
-        columns={this.props.numColumns}
-      />
-    </Fragment>
+    <Gallery
+      photos={this.works}
+      direction={this.props.direction}
+      columns={this.props.numColumns}
+    />
   );
 
   loaders = (

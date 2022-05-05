@@ -1,5 +1,5 @@
-import $ from "jquery";
 import "./light-scheme.css";
+import $ from "jquery";
 
 $(document).ready(function () {
   if ($("body").hasClass("light")) {

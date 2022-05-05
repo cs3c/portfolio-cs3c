@@ -11,36 +11,31 @@ export class Menu extends React.Component {
 
   mainMenu() {
     return (
-      <div
-        style={{
-          marginRight: "50px",
-          textAlign: "justify"
-        }}
-      >
-        <h5
-          className="hoverable"
-          style={{ marginLeft: "1px", marginBlockStart: "15px" }}
-        >
-          <span style={{ writingMode: "horizontal-tb" }}>4</span> ~= games stuff
-        </h5>
-        <h5
-          className="hoverable"
-          style={{ marginLeft: "1px", marginBlockStart: "15px" }}
-        >
-          <span style={{ writingMode: "horizontal-tb" }}>3</span> ~= commercial
-        </h5>
-        <h5
-          className="hoverable"
-          style={{ marginLeft: "1px", marginBlockStart: "15px" }}
-        >
-          <span style={{ writingMode: "horizontal-tb" }}>2</span> ~= 2d/3d art
-        </h5>
-        <h5
-          class="hoverable"
-          style={{ marginLeft: "1px", marginBlockStart: "15px" }}
-        >
-          <span style={{ writingMode: "horizontal-tb" }}>1</span> ~= audiovisual
-        </h5>
+      <div id="main-menu">
+        <div className="main-menu-item hoverable">
+          <p>1</p>
+          <div>
+            <h5>games stuff</h5>
+          </div>
+        </div>
+        <div className="main-menu-item hoverable">
+          <p>2</p>
+          <div>
+            <h5>commercial</h5>
+          </div>
+        </div>
+        <div className="main-menu-item hoverable">
+          <p>3</p>
+          <div>
+            <h5>2d/3d art</h5>
+          </div>
+        </div>
+        <div className="main-menu-item hoverable">
+          <p>4</p>
+          <div>
+            <h5>audiovisual</h5>
+          </div>
+        </div>
       </div>
     );
   }

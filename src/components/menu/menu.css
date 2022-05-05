@@ -1,0 +1,28 @@
+#main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  margin-right: 50px;
+}
+
+.main-menu-item {
+  display: flex;
+}
+
+.main-menu-item:hover {
+  background-color: red;
+}
+
+.main-menu-item > p {
+  font-size: 50px;
+  margin: 0px;
+  width: fit-content;
+  opacity: 0.5;
+  text-align: end;
+}
+
+.main-menu-item > div > h5 {
+  margin: 0px;
+  width: 100%;
+  overflow-wrap: break-word;
+}
