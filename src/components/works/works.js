@@ -54,10 +54,10 @@ export class Works extends React.Component {
 
   loaders = (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
-      <Skeleton width="50vh" height="40vh" />
-      <Skeleton width="50vh" height="40vh" />
       <Skeleton width="50vh" height="30vh" />
-      <Skeleton width="50vh" height="40vh" />
+      <Skeleton width="50vh" height="30vh" />
+      <Skeleton width="50vh" height="45vh" />
+      <Skeleton width="50vh" height="35vh" />
     </div>
   );
 

@@ -13,7 +13,6 @@ export class Menu extends React.Component {
     return (
       <div
         style={{
-          writingMode: "vertical-rl",
           marginRight: "50px",
           textAlign: "justify"
         }}

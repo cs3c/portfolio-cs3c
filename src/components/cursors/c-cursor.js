@@ -1,5 +1,5 @@
-import $ from "jquery";
 import "./c-cursor.css";
+import $ from "jquery";
 
 /* Cursor movement */
 const ball = $("#cc-container");
