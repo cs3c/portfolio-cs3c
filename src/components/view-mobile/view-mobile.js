@@ -4,7 +4,8 @@ import { MobileView } from "react-device-detect";
 import { Header } from "../header/header";
 import { Menu } from "../menu/menu";
 import { Footer } from "../footer/footer";
-import { Works } from "../works/works";
+import { WorksArt } from "../works/art/works-art";
+import "../works/engineering/works-engineering";
 
 export default class ViewMobile extends React.Component {
   props = null;
@@ -26,7 +27,7 @@ export default class ViewMobile extends React.Component {
           </div>
         </div>
         <div id="content-bottom-gallery">
-          <Works />
+          <WorksArt direction="column" numColumns="1" />
         </div>
         <div className="softness-bottom"></div>
       </MobileView>

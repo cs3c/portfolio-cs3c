@@ -1,9 +1,9 @@
-import "./works.css";
+import "./works-art.css";
 import React from "react";
 import Gallery from "react-photo-gallery";
-import { Skeleton } from "../skeleton-loader/skeleton-loader";
+import { Skeleton } from "../../skeleton-loader/skeleton-loader";
 
-export class Works extends React.Component {
+export class WorksArt extends React.Component {
   props = { direction: "column", numColumns: 2 };
   state = { isLoading: true };
   works = [
@@ -41,6 +41,11 @@ export class Works extends React.Component {
       height: 3
     }
   ];
+
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
 
   worksGallery = (
     <Gallery
