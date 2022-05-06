@@ -37,7 +37,7 @@ export default class ViewBrowser extends React.Component {
           <div className="content-right-info">
             <Header />
             <div style={{ display: "flex" }}>
-              <Menu />
+              {/* <Menu /> */}
               <Footer />
             </div>
           </div>
