@@ -6,6 +6,11 @@ export class Header extends React.Component {
   props = null;
   state = null;
 
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
+
   render() {
     return this.mainHeader();
   }
@@ -27,10 +32,10 @@ export class Header extends React.Component {
             <span style={{ opacity: "30%" }}>\\\</span>
             <span id="light-scheme">
               <a id="light-mode">
-                <i class="lni lni-sun"></i>
+                <i className="lni lni-sun"></i>
               </a>
               <a id="dark-mode">
-                <i class="lni lni-night"></i>
+                <i className="lni lni-night"></i>
               </a>
             </span>
             <span style={{ opacity: "30%" }} className="disappearance">
@@ -45,18 +50,18 @@ export class Header extends React.Component {
           <h6 id="contact">
             Get in touch at
             <a href="mailto:avcomps@protonmail.com">
-              <i class="lni lni-popup contact-icon"></i>
+              <i className="lni lni-popup contact-icon"></i>
             </a>{" "}
             ,
             <a
               href="https://youtube.com/c/AVcomps1/videos"
               style={{ marginRight: "3px" }}
             >
-              <i class="lni lni-youtube contact-icon"></i>
+              <i className="lni lni-youtube contact-icon"></i>
             </a>{" "}
             &/or
             <a href="https://github.com/avcomps">
-              <i class="lni lni-github-original contact-icon"></i>
+              <i className="lni lni-github-original contact-icon"></i>
             </a>
           </h6>
         </span>

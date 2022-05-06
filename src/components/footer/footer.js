@@ -5,6 +5,11 @@ export class Footer extends React.Component {
   props = null;
   state = null;
 
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
+
   render() {
     return this.mainFooter();
   }
@@ -27,7 +32,7 @@ export class Footer extends React.Component {
           Made thanks to the powerfulness & endless possibilities of
           <span>
             <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-              <i class="lni lni-react"></i> REACTJS
+              <i className="lni lni-react"></i> REACTJS
             </a>
           </span>
         </p>

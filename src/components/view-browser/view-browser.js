@@ -13,6 +13,11 @@ export default class ViewBrowser extends React.Component {
   props = null;
   state = null;
 
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
+
   render() {
     return this.browser();
   }
