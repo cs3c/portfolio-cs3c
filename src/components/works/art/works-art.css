@@ -12,7 +12,7 @@
   opacity: 0.5;
   filter: blur(1px);
   box-sizing: border-box;
-  border: transparent 10px solid;
+  border: transparent 5px solid;
 }
 
 @keyframes fadeIn {
