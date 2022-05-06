@@ -27,6 +27,7 @@ function animate() {
 animate();
 
 document.addEventListener("mousemove", function (event) {
+  console.log(ball.contents());
   mouseX = event.pageX;
   mouseY = event.pageY;
 });

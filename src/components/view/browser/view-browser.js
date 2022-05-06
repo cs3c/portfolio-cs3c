@@ -7,6 +7,7 @@ import { Footer } from "../../footer/footer";
 import { WorksArt } from "../../works/art/works-art";
 // import { WorksEng } from "../../works/engineering/works-engineering";
 // import { Player } from "../../player/player";
+// import { RoundCursor } from "../../cursors/cursor";
 import "../../cursors/c-cursor";
 
 export default class ViewBrowser extends React.Component {
@@ -25,6 +26,7 @@ export default class ViewBrowser extends React.Component {
   browser() {
     return (
       <BrowserView>
+        {/* <RoundCursor /> */}
         <div id="content-left">
           <div className="softness-top"></div>
           <div id="content-left-gallery">
