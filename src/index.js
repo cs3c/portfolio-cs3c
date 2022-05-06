@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
 import { isBrowser, isMobile } from "react-device-detect";
-import ViewBrowser from "./components/view-browser/view-browser";
-import ViewMobile from "./components/view-mobile/view-mobile";
+import ViewBrowser from "./components/view/browser/view-browser";
+import ViewMobile from "./components/view/mobile/view-mobile";
 
 function renderApp() {
   let root = document.getElementById("app");
