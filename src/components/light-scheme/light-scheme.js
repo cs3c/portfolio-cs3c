@@ -1,7 +1,7 @@
 import "./light-scheme.css";
 import $ from "jquery";
 
-$(document).ready(function () {
+$(function () {
   if ($("body").hasClass("light")) {
     $("#light-mode").hide();
     $("#dark-mode").show();

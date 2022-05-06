@@ -1,7 +1,7 @@
 #footnote {
-  font-size: 10px;
   width: 100px;
   font-family: "Helvetica";
+  font-size: 10px;
 }
 
 #footnote > span > a {

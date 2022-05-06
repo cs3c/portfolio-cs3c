@@ -3,14 +3,6 @@ import React, { Fragment } from "react";
 import "../light-scheme/light-scheme";
 
 export class Header extends React.Component {
-  props = null;
-  state = null;
-
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-
   render() {
     return this.mainHeader();
   }
@@ -27,7 +19,7 @@ export class Header extends React.Component {
             </span>
           </h1>
           <h3 id="slogan">
-            <a href="#">ART</a>
+            <a href="#art">ART</a>
             <span style={{ opacity: "50%" }}>&</span>
             <span style={{ opacity: "30%" }}>\\\</span>
             <span id="light-scheme">
@@ -42,7 +34,7 @@ export class Header extends React.Component {
               +++/X
             </span>
             <br />
-            <a href="#">ENGINEERING</a>
+            <a href="#engineering">ENGINEERING</a>
             <span style={{ opacity: "30%" }} className="disappearance">
               35D/
             </span>
