@@ -27,10 +27,10 @@ export class Header extends React.Component {
             <span style={{ opacity: "50%" }}>&</span>
             <span style={{ opacity: "30%" }}>\\\</span>
             <span id="light-scheme">
-              <a id="light-mode">
+              <a id="light-mode" href="#light">
                 <MdWbSunny />
               </a>
-              <a id="dark-mode">
+              <a id="dark-mode" href="#dark">
                 <MdNightsStay />
               </a>
             </span>
