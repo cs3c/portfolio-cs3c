@@ -3,7 +3,6 @@ import React, { Fragment } from "react";
 import { BiMessageDetail } from "react-icons/bi";
 import { ImYoutube } from "react-icons/im";
 import { VscGithubInverted } from "react-icons/vsc";
-import "../light-scheme/light-scheme";
 import { LightScheme } from "../light-scheme/light-scheme";
 
 export class Header extends React.Component {
