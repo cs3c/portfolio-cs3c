@@ -24,7 +24,6 @@ export default class ViewBrowser extends React.Component {
   browser() {
     return (
       <BrowserView>
-        {/* <RoundCursor /> */}
         <div id="content-left">
           <div className="softness-top"></div>
           <div id="content-left-gallery">
@@ -37,7 +36,6 @@ export default class ViewBrowser extends React.Component {
           <div className="content-right-info">
             <Header />
             <div style={{ display: "flex" }}>
-              {/* <Menu /> */}
               <Footer />
             </div>
           </div>
