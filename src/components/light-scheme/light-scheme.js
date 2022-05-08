@@ -1,6 +1,6 @@
 import "./light-scheme.css";
-import $ from "jquery";
 import React from "react";
+import $ from "jquery";
 import { BsSunFill } from "react-icons/bs";
 import { MdNightsStay } from "react-icons/md";
 

@@ -1,11 +1,7 @@
 import "./c-cursor.css";
 import React from "react";
-import "./c-cursor";
 
 export class RoundCursor extends React.Component {
-  props = null;
-  state = null;
-
   render() {
     return this.cursor();
   }

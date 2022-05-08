@@ -64,14 +64,10 @@ export class WorksArt extends React.Component {
     </div>
   );
 
-  componentDidMount() {
-    setInterval(() => {
-      this.setState({ isLoading: false });
-    }, 1500);
-  }
+  componentDidMount() {}
 
   render() {
-    if (this.state.isLoading) return this.loaders;
-    else return this.worksGallery;
+    // if (this.state.isLoading) return this.loaders;
+    return this.worksGallery;
   }
 }

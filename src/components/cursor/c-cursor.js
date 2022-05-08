@@ -1,7 +1,6 @@
 import $ from "jquery";
 import "./c-cursor.css";
 
-/* Cursor movement */
 const ball = $("#cc-container");
 
 let mouseX = 0;
@@ -27,7 +26,6 @@ function animate() {
 animate();
 
 document.addEventListener("mousemove", function (event) {
-  console.log(ball.contents());
   mouseX = event.pageX;
   mouseY = event.pageY;
 });
@@ -44,7 +42,7 @@ $(function () {
         $(".cc-text-tip").text("Switch dark/light");
         $(".cc-hover").fadeTo(30, 1);
         $("#sfx-hover-alt")[0].currentTime = 0;
-        // $("#sfx-hover-alt")[0].play();
+        $("#sfx-hover-alt")[0].play();
       } else if ($(this).is(".react-photo-gallery--gallery")) {
         console.log("11111111111111111");
         $(".cc-text-tip").text("Play work");
@@ -53,7 +51,7 @@ $(function () {
         $(".cc-text-tip").text("Click to go");
         $(".cc-hover").fadeTo(30, 1);
         $("#sfx-hover-alt")[0].currentTime = 0;
-        // $("#sfx-hover-alt")[0].play();
+        $("#sfx-hover-alt")[0].play();
       }
     },
     mouseleave: function () {
@@ -64,8 +62,8 @@ $(function () {
     },
     click: function () {
       if ($(this).is("#light-scheme a")) {
-        // $("#sfx-hover")[0].currentTime = 0;
-        // $("#sfx-hover")[0].play();
+        $("#sfx-hover")[0].currentTime = 0;
+        $("#sfx-hover")[0].play();
       }
     }
   });
