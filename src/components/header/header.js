@@ -1,5 +1,9 @@
 import "./header.css";
 import React, { Fragment } from "react";
+import { GiStripedSun } from "react-icons/gi";
+import { BsYoutube } from "react-icons/bs";
+import { VscGithubInverted } from "react-icons/vsc";
+import { MdNightsStay, MdAlternateEmail } from "react-icons/md";
 import "../light-scheme/light-scheme";
 
 export class Header extends React.Component {
@@ -24,10 +28,10 @@ export class Header extends React.Component {
             <span style={{ opacity: "30%" }}>\\\</span>
             <span id="light-scheme">
               <a id="light-mode">
-                <i className="lni lni-sun"></i>
+                <GiStripedSun />
               </a>
               <a id="dark-mode">
-                <i className="lni lni-night"></i>
+                <MdNightsStay />
               </a>
             </span>
             <span style={{ opacity: "30%" }} className="disappearance">
@@ -42,18 +46,18 @@ export class Header extends React.Component {
           <h6 id="contact">
             Get in touch at
             <a href="mailto:avcomps@protonmail.com">
-              <i className="lni lni-popup contact-icon"></i>
+              <MdAlternateEmail className="contact-icon" />
             </a>{" "}
             ,
             <a
               href="https://youtube.com/c/AVcomps1/videos"
               style={{ marginRight: "3px" }}
             >
-              <i className="lni lni-youtube contact-icon"></i>
+              <BsYoutube className="contact-icon" />
             </a>{" "}
             &/or
             <a href="https://github.com/avcomps">
-              <i className="lni lni-github-original contact-icon"></i>
+              <VscGithubInverted className="contact-icon" />
             </a>
           </h6>
         </span>
