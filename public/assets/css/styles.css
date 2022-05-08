@@ -57,8 +57,6 @@ i {
 .light a,
 .light span,
 .light button {
-  width: max-content;
-  text-decoration: none;
   color: black;
 }
 
