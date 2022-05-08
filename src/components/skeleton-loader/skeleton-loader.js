@@ -1,8 +1,8 @@
 import "./skeleton-loader.css";
-import React, { Fragment } from "react";
+import React from "react";
 
 export class Skeleton extends React.Component {
-  props = { width: 0, height: 0, circle: false };
+  props = { width: 0, height: 0, margin: 0, circle: false };
   state = null;
 
   constructor(props) {
@@ -13,22 +13,28 @@ export class Skeleton extends React.Component {
   render() {
     let w = this.props.width;
     let h = this.props.height;
+    let m = this.props.margin;
     let c = this.props.circle;
 
-    return this.skeletonLoader(w, h, c);
+    return this.skeletonLoader(w, h, m, c);
   }
 
-  skeletonLoader(width, height, circle) {
+  skeletonLoader(width, height, margin, circle) {
     var borderRadius = 0;
     if (circle) borderRadius = width;
 
     return (
-      <Fragment>
+      <span>
         <div
-          style={{ width: width, height: height, borderRadius: borderRadius }}
+          style={{
+            width: width,
+            height: height,
+            margin: margin,
+            borderRadius: borderRadius
+          }}
           className="skeleton-loader"
         ></div>
-      </Fragment>
+      </span>
     );
   }
 }

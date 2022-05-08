@@ -1,10 +1,10 @@
 import "./header.css";
 import React, { Fragment } from "react";
 import { BiMessageDetail } from "react-icons/bi";
-import { BsYoutube } from "react-icons/bs";
+import { ImYoutube } from "react-icons/im";
 import { VscGithubInverted } from "react-icons/vsc";
-import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import "../light-scheme/light-scheme";
+import { LightScheme } from "../light-scheme/light-scheme";
 
 export class Header extends React.Component {
   render() {
@@ -26,14 +26,7 @@ export class Header extends React.Component {
             <a href="#art">ART</a>
             <span style={{ opacity: "50%" }}>&</span>
             <span style={{ opacity: "30%" }}>\\\</span>
-            <span id="light-scheme">
-              <a id="light-mode" href="#light">
-                <MdWbSunny />
-              </a>
-              <a id="dark-mode" href="#dark">
-                <MdNightsStay />
-              </a>
-            </span>
+            <LightScheme />
             <span style={{ opacity: "30%" }} className="disappearance">
               +++/X
             </span>
@@ -53,7 +46,7 @@ export class Header extends React.Component {
               href="https://youtube.com/c/AVcomps1/videos"
               style={{ marginRight: "3px" }}
             >
-              <BsYoutube className="contact-icon" />
+              <ImYoutube className="contact-icon" />
             </a>{" "}
             &/or
             <a href="https://github.com/avcomps">

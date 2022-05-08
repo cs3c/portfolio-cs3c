@@ -57,10 +57,10 @@ export class WorksArt extends React.Component {
 
   loaders = (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
-      <Skeleton width="50vh" height="30vh" />
-      <Skeleton width="50vh" height="30vh" />
-      <Skeleton width="50vh" height="45vh" />
-      <Skeleton width="50vh" height="35vh" />
+      <Skeleton width="50vh" height="30vh" margin="0.5vh" />
+      <Skeleton width="50vh" height="30vh" margin="0.5vh" />
+      <Skeleton width="50vh" height="45vh" margin="0.5vh" />
+      <Skeleton width="50vh" height="35vh" margin="0.5vh" />
     </div>
   );
 
