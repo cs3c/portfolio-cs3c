@@ -1,9 +1,9 @@
 import "./header.css";
 import React, { Fragment } from "react";
-import { GiStripedSun } from "react-icons/gi";
+import { BiMessageDetail } from "react-icons/bi";
 import { BsYoutube } from "react-icons/bs";
 import { VscGithubInverted } from "react-icons/vsc";
-import { MdNightsStay, MdAlternateEmail } from "react-icons/md";
+import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import "../light-scheme/light-scheme";
 
 export class Header extends React.Component {
@@ -28,7 +28,7 @@ export class Header extends React.Component {
             <span style={{ opacity: "30%" }}>\\\</span>
             <span id="light-scheme">
               <a id="light-mode">
-                <GiStripedSun />
+                <MdWbSunny />
               </a>
               <a id="dark-mode">
                 <MdNightsStay />
@@ -46,7 +46,7 @@ export class Header extends React.Component {
           <h6 id="contact">
             Get in touch at
             <a href="mailto:avcomps@protonmail.com">
-              <MdAlternateEmail className="contact-icon" />
+              <BiMessageDetail className="contact-icon" />
             </a>{" "}
             ,
             <a
