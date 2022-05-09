@@ -33,18 +33,17 @@ document.addEventListener("mousemove", function (event) {
 $(function () {
   $("#cc-container, .cc-cursors").css("opacity", "1");
 
-  $("a, .hoverable, .react-photo-gallery--gallery").on({
+  $("a, .hoverable, .react-photo-gallery--gallery > div > img").on({
     mouseenter: function () {
       $(".cc-normal").fadeTo(50, 0);
       $(".cc-text-tip").text("Click to go");
 
       if ($(this).is("#light-scheme a")) {
-        $(".cc-text-tip").text("Switch dark/light");
+        $(".cc-text-tip").text("Switch day/night");
         $(".cc-hover").fadeTo(30, 1);
         $("#sfx-hover-alt")[0].currentTime = 0;
         $("#sfx-hover-alt")[0].play();
-      } else if ($(this).is(".react-photo-gallery--gallery")) {
-        console.log("11111111111111111");
+      } else if ($(this).is(".react-photo-gallery--gallery > div > img")) {
         $(".cc-text-tip").text("Play work");
         $(".cc-hover-play").fadeTo(30, 1);
       } else {
