@@ -56,8 +56,18 @@ i {
 .light p,
 .light a,
 .light span,
-.light button {
+.light button,
+.light hr {
   color: black;
+}
+
+hr {
+  border-style: solid;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  color: white;
 }
 
 a:hover,

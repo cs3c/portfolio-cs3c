@@ -9,3 +9,9 @@
   width: 100px;
   margin-left: 3px;
 }
+
+.footer-icon {
+  margin-right: 3px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+}
