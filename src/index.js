@@ -1,3 +1,5 @@
+import "./styles/animations.css";
+import "./styles/styles.css";
 import React from "react";
 import { render } from "react-dom";
 import { isBrowser, isMobile } from "react-device-detect";

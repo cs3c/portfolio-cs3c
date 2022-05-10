@@ -1,12 +1,9 @@
+import "./player.css";
 import React from "react";
 
 export class Player extends React.Component {
   props = null;
   state = null;
-
-  render() {
-    return this.mainPlayer();
-  }
 
   mainPlayer() {
     return (
@@ -44,5 +41,14 @@ export class Player extends React.Component {
         </div>
       </div>
     );
+  }
+
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
+
+  render() {
+    return this.mainPlayer();
   }
 }

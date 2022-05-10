@@ -13,8 +13,8 @@ export default class ViewBrowser extends React.Component {
   props = null;
   state = { showArt: true, showPlayer: false };
 
-  playerElement = (<Player />);
-  infoElement = (
+  fgPlayer = (<Player />);
+  fgInfo = (
     <div className="content-right-info">
       <Header />
       <Footer />
@@ -27,8 +27,8 @@ export default class ViewBrowser extends React.Component {
   }
 
   render() {
-    if (!this.state.showPlayer) this.playerElement = null;
-    else this.infoElement = null;
+    if (!this.state.showPlayer) this.fgPlayer = null;
+    else this.fgInfo = null;
 
     return (
       <BrowserView>
@@ -41,8 +41,8 @@ export default class ViewBrowser extends React.Component {
         </div>
 
         <div id="content-right">
-          {this.infoElement}
-          {this.playerElement}
+          {this.fgInfo}
+          {this.fgPlayer}
         </div>
       </BrowserView>
     );
