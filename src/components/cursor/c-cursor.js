@@ -41,16 +41,12 @@ $(function () {
       if ($(this).is("#light-scheme a")) {
         $(".cc-text-tip").text("Switch day/night");
         $(".cc-hover").fadeTo(30, 1);
-        $("#sfx-hover-alt")[0].currentTime = 0;
-        $("#sfx-hover-alt")[0].play();
       } else if ($(this).is(".react-photo-gallery--gallery > div > img")) {
         $(".cc-text-tip").text("Play work");
         $(".cc-hover-play").fadeTo(30, 1);
       } else {
         $(".cc-text-tip").text("Click to go");
         $(".cc-hover").fadeTo(30, 1);
-        $("#sfx-hover-alt")[0].currentTime = 0;
-        $("#sfx-hover-alt")[0].play();
       }
     },
     mouseleave: function () {
@@ -58,12 +54,6 @@ $(function () {
       $(".cc-hover").fadeTo(150, 0);
       $(".cc-hover-play").fadeTo(150, 0);
       $(".cc-text-tip").text("");
-    },
-    click: function () {
-      if ($(this).is("#light-scheme a")) {
-        $("#sfx-hover")[0].currentTime = 0;
-        $("#sfx-hover")[0].play();
-      }
     }
   });
 });
