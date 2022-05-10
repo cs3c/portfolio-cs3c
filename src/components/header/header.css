@@ -1,17 +1,22 @@
-#title {
+#header {
+  margin-bottom: 35px;
+}
+
+#header-title {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
-#slogan {
+#header-slogan {
   margin: 0px;
   margin-bottom: 10px;
   font-size: 35px;
   line-height: 30px;
 }
 
-#contact {
+#header-contact {
   margin-top: 10px;
+  margin-bottom: 0px;
   font-family: "arial";
   font-weight: 400;
   font-size: 15px;
@@ -35,15 +40,15 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #title {
+  #header-title {
     font-size: 10px;
   }
 
-  #slogan {
+  #header-slogan {
     font-size: 30px;
   }
 
-  #contact {
+  #header-contact {
     font-size: 15px;
   }
 }

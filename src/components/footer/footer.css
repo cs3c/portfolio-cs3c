@@ -1,10 +1,18 @@
-#footnote {
+#footer {
+  display: flex;
+}
+
+#footer-images {
+  width: 100%;
+}
+
+#footer-footnote {
   width: 100px;
   font-family: "Helvetica";
   font-size: 10px;
 }
 
-#footnote > span > a {
+#footer-footnote > span > a {
   font-size: 10px;
   width: 100px;
   margin-left: 3px;

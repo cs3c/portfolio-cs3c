@@ -1,5 +1,5 @@
 import "./view-browser.css";
-import React, { Fragment } from "react";
+import React from "react";
 import $ from "jquery";
 import { BrowserView } from "react-device-detect";
 import { Header } from "../../header/header";
@@ -13,28 +13,22 @@ export default class ViewBrowser extends React.Component {
   props = null;
   state = { showArt: true, showPlayer: false };
 
+  playerElement = (<Player />);
+  infoElement = (
+    <div className="content-right-info">
+      <Header />
+      <Footer />
+    </div>
+  );
+
   constructor(props) {
     super(props);
     this.props = props;
   }
 
   render() {
-    return this.browser();
-  }
-
-  browser() {
-    let playerElement = <Player />;
-    let infoElement = (
-      <div className="content-right-info">
-        <Header />
-        <div style={{ display: "flex" }}>
-          <Footer />
-        </div>
-      </div>
-    );
-
-    if (!this.state.showPlayer) playerElement = <Fragment />;
-    else infoElement = <Fragment />;
+    if (!this.state.showPlayer) this.playerElement = null;
+    else this.infoElement = null;
 
     return (
       <BrowserView>
@@ -47,8 +41,8 @@ export default class ViewBrowser extends React.Component {
         </div>
 
         <div id="content-right">
-          {infoElement}
-          {playerElement}
+          {this.infoElement}
+          {this.playerElement}
         </div>
       </BrowserView>
     );
