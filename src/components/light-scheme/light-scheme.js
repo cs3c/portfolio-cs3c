@@ -5,7 +5,7 @@ import { BsSunFill } from "react-icons/bs";
 import { MdNightsStay } from "react-icons/md";
 
 export class LightScheme extends React.Component {
-  lightModeFragment = (
+  fgLightMode = (
     <span id="light-scheme">
       <a id="light-mode" href="#light" onClick={this.changeLightMode}>
         <BsSunFill />
@@ -42,6 +42,6 @@ export class LightScheme extends React.Component {
   }
 
   render() {
-    return this.lightModeFragment;
+    return this.fgLightMode;
   }
 }
