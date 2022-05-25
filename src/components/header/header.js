@@ -10,23 +10,19 @@ export class Header extends React.Component {
     <h1 id="header-title">
       <a href="/">ALI</a>
       <span style={{ opacity: "30%" }}>ASAIDI</span>
-      <span style={{ opacity: "30%" }} className="disappearance">
-        F4FFB+++/X
-      </span>
     </h1>
   );
 
   fgSlogan = (
     <h3 id="header-slogan">
-      <a href="#art">ART</a>
+      <a href="#art">PLAY</a>
       <span style={{ opacity: "50%" }}>&</span>
-      <span style={{ opacity: "30%" }}>\\\</span>
       <LightScheme />
       <span style={{ opacity: "30%" }} className="disappearance">
         +++/X
       </span>
       <br />
-      <a href="#engineering">ENGINEERING</a>
+      <a href="#engineering">EXPLORE</a>
       <span style={{ opacity: "30%" }} className="disappearance">
         35D/
       </span>
