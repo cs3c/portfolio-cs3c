@@ -8,8 +8,8 @@ import { LightScheme } from "../light-scheme/light-scheme";
 export class Header extends React.Component {
   fgTitle = (
     <h1 id="header-title">
-      <a href="/">ALI</a>
-      <span style={{ opacity: "30%" }}>ASAIDI</span>
+      <a href="/">Ali</a>
+      <span style={{ opacity: "30%" }}>Vorobiev</span>
     </h1>
   );
 
@@ -43,7 +43,7 @@ export class Header extends React.Component {
         <ImYoutube className="contact-icon" />
       </a>{" "}
       &/or
-      <a href="https://github.com/avcomps">
+      <a href="https://github.com/cs3c">
         <VscGithubInverted className="contact-icon" />
       </a>
     </h6>
