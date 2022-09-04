@@ -1,6 +1,5 @@
 import "./view-browser.css";
 import React from "react";
-import $ from "jquery";
 import { BrowserView } from "react-device-detect";
 import { Header } from "../../header/header";
 import { Footer } from "../../footer/footer";
