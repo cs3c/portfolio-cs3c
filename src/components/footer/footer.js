@@ -7,7 +7,7 @@ export class Footer extends React.Component {
     <p id="footer-footnote">
       Made thanks to the endless possibilities of
       <span>
-        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+        <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
           <FaReact className="footer-icon" />
           REACT
         </a>
