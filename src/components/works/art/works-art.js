@@ -8,7 +8,7 @@ export class WorksArt extends React.Component {
   state = { isLoading: true };
   works = [
     {
-      src: "https://i.ibb.co/QQ46QG5/example-01.gif",
+      src: "https://i.ibb.co/w793WTX/example-03.gif",
       width: 4,
       height: 3
     },
@@ -18,7 +18,7 @@ export class WorksArt extends React.Component {
       height: 7
     },
     {
-      src: "https://i.ibb.co/qMYrHdH/example-02.gif",
+      src: "https://i.ibb.co/QQ46QG5/example-01.gif",
       width: 5,
       height: 4
     }
